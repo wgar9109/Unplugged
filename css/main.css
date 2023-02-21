@@ -381,7 +381,7 @@ aside {
 @media only screen and (min-width: 768px) {
 
   /*Tablet styles here */
-  
+
   .content-wrapper {
     max-width: 640px;
     margin: 100px 0;
@@ -501,21 +501,70 @@ About Page
    =========================================================================
 */
 
-  .faq .content-wrapper {
-    justify-content: space-between;
+.faq .content-wrapper {
+  justify-content: space-between;
+}
+
+.faq-content {
+  flex-basis: 45%;
+}
+
+.faq h2 {
+  width: 100%;
+}
+
+
+@media only screen and (min-width: 1200px) {
+
+  /* Desktop styles here */
+  .content-wrapper {
+    max-width: 960px;
   }
 
-  .faq-content {
-    flex-basis: 45%;
+  /* Hero */
+  .hero-area h1 {
+    width: 60%;
   }
+
+  aside .centent-wrapper {
+    justify-content: space-around;
+  }
+
+  aside .centent-wrapper .form-description,
+  aside .centent-wrapper .form {
+    width: 30%;
+  }
+
+  .features h2 {
+    width: 90%;
+  }
+
+  .featuresn article {
+    flex-basis: 33%;
+  }
+
+  .reviews article div {
+    width: 42%;
+  }
+
+  /* ==========================================================================
+   About Page 
+   ==========================================================================
+*/
+  .mission h2,
+  .contact-section .content-wrapper h2 {
+    width: 95%;
+  }
+
+  /* ==========================================================================
+   FAQ Page 
+   ==========================================================================
+*/
 
   .faq h2 {
     width: 100%;
   }
 
-
-@media only screen and (min-width: 1200px) {
-  /* Desktop styles here */
 }
 
 
