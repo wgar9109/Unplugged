@@ -95,6 +95,8 @@ html {
 }
 
 body {
+  background: url(unpluggedlogo.png);
+  background-size: 35%;
   font-family: 'Opens Sans', sans-serif;
   color: #e2e3ed;
   font-size: 1em;
@@ -124,22 +126,37 @@ h4 {
   font-weight: 500;
   margin: 20px 0;
   font-size: 1.125em;
-
 }
 
-p {
-  font-size: .875;
-  line-height: 1.285;
+.btn {
+  background-color: #ff1256;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.6em;
+  text-align: center;
+  box-shadow: 2px 2px 0px #DADADA;
+}
+
+.btn:hover {
+  background-color: #b21e49;
 }
 
 img {
-  background-image: url("C:\Users\tyler\Unplugged\img\unplugged-retreat-features.jpg") alt="group of teenagers on the floor";
+  width: 100%;
+  background-image: url(unplugged-retreat-features.jpg);
 }
 
 
 address {
   font-style: normal;
 
+}
+
+p {
+  font-size: .875;
+  line-height: 1.285;
 }
 
 .content-wrapper {
@@ -233,12 +250,16 @@ footer .copyright {
 /* Hero Area */
 
 .hero-area {
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
 }
 
 .hero-area h1 {
+  background: url(unplugged-retreat.jpg);
   font-size: 2.25em;
   font-family: 'Poppins', Helvetica, Arial, sans-serif;
   font-weight: 500;
@@ -285,6 +306,9 @@ input[type=button] {
 /* Features */
 
 .features {
+  background: url('unplugged-retreat-features.png');
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -340,6 +364,29 @@ input[type=button] {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+.map-container {
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+  overflow: hidden;
+}
+
+.map-container figure {
+  width: 100%;
+  height: 0;
+  padding-bottom: 125%;
+  overflow: hidden;
+  position: relative;
+}
+
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .contact-section {
